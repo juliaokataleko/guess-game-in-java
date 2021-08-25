@@ -32,7 +32,7 @@ public class Main {
 			attempts++;
 		}
 	
-		String message = "Hello " + name + "\n";
+		String message = "Yeahhhhhhhhhh!!! " + name + "\n";
 		message += "You win!!";
 		message += "\nThe correct answer is : " + randomNumber;
 		message += "\nYou win in " + attempts + " attempts";
