@@ -1,7 +1,6 @@
 import javax.swing.JOptionPane;
 import java.util.Random;
 
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -39,7 +38,6 @@ public class Main {
 		message += "\nYou win in " + attempts + " attempts";
 		
 		JOptionPane.showMessageDialog(null, message);
-			
 
 	}
 
