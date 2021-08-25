@@ -13,14 +13,14 @@ public class Main {
 		
 		String suggestion;
 			
-		String name = JOptionPane.showInputDialog("Enter Your Name");
+		String name = JOptionPane.showInputDialog("Please!! Enter Your Name: ");
 		int randomNumber = random.nextInt(100)+1;
 		
 		int userAnswer = 0;
-		int times = 0;
+		int attempts = 0;
 		
 		while(randomNumber != userAnswer) {
-			userAnswer = Integer.parseInt(JOptionPane.showInputDialog(name + "\nPlease enter between 0 and 100\nAttempts: " + times));
+			userAnswer = Integer.parseInt(JOptionPane.showInputDialog(name + "\nPlease enter between 0 and 100\nAttempts: " + attempts));
 			
 			if(randomNumber != userAnswer) {
 				if(randomNumber > userAnswer) {
@@ -30,13 +30,13 @@ public class Main {
 				}
 				JOptionPane.showMessageDialog(null, "Oops. " +userAnswer+ " is wrong! Try again!!\n" + suggestion);
 			}
-			times++;
+			attempts++;
 		}
 	
 		String message = "Hello " + name + "\n";
 		message += "You win!!";
-		message += "The correct answer is : " + randomNumber;
-		message += "\nYou win in " + times + " attempts";
+		message += "\nThe correct answer is : " + randomNumber;
+		message += "\nYou win in " + attempts + " attempts";
 		
 		JOptionPane.showMessageDialog(null, message);
 			
